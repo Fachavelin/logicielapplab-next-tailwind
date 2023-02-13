@@ -22,8 +22,8 @@ export const Hero: FC = () => {
         </div>
         <div className='overflow-x-hidden overflow-y-hidden'>
           <img
-            className='rotate-45'
-            src='https://res.cloudinary.com/logicielapplab/image/upload/v1676220329/LogicielApplab/1554921351_xkjhcj.svg'
+            className=''
+            src='https://res.cloudinary.com/logicielapplab/image/upload/v1676307901/LogicielApplab/PHONE-min_o1jfhf.png'
             alt=''
           />
         </div>

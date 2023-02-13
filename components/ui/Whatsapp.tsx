@@ -16,7 +16,7 @@ export const Whatsapp: FC = () => {
   return (
     <button
       onClick={redirectToWhatsapp}
-      className='fixed bg-white rounded-full hover:scale-105 z-40 cursor-pointer right-3 bottom-3 animate-bounce'
+      className='fixed bg-white rounded-full hover:scale-105 z-40 cursor-pointer right-3 bottom-3 animate-bounce p-0.5'
     >
       <img className='h-14' src='/images/whatsapp.svg' alt='' />
     </button>
