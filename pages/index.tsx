@@ -1,6 +1,5 @@
 import { Layout } from '@/components/layouts';
-import { Body, Hero, Slider } from '@/components/pages';
-import Head from 'next/head';
+import { Body, Contact, Hero, Slider } from '@/components/pages';
 
 export default function Home() {
   return (
@@ -9,6 +8,7 @@ export default function Home() {
         <Hero />
         <Body />
         <Slider />
+        <Contact />
       </Layout>
     </>
   );

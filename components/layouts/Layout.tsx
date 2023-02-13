@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import { Navbar } from '../ui';
+import { Navbar, Whatsapp } from '../ui';
 
 type Props = {
   title?: string;
@@ -8,9 +8,10 @@ type Props = {
 
 export const Layout: FC<Props> = ({ children }) => {
   return (
-    <div className=''>
+    <div className='relative'>
       <Navbar />
       <main>{children}</main>
+      <Whatsapp />
     </div>
   );
 
