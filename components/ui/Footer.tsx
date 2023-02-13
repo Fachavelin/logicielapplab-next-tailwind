@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FC } from 'react';
 
 export const Footer: FC = () => {
@@ -25,6 +26,7 @@ export const Footer: FC = () => {
               target='_blank'
               href='https://www.facebook.com/profile.php?id=100031324907198'
               className='bg-white rounded-lg cursor-pointer'
+              rel='noreferrer'
             >
               <img
                 className='scale-125 h-10'
@@ -36,6 +38,7 @@ export const Footer: FC = () => {
               target='_blank'
               href='https://www.instagram.com/logicielapplab/'
               className='bg-white rounded-xl cursor-pointer'
+              rel='noreferrer'
             >
               <img
                 className='scale-125 h-10'
@@ -47,6 +50,7 @@ export const Footer: FC = () => {
               target='_blank'
               href='https://logicelapplab@gmail.com'
               className='bg-white rounded-xl cursor-pointer'
+              rel='noreferrer'
             >
               <img
                 className='scale-125 h-10'
