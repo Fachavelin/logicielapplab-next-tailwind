@@ -8,7 +8,7 @@ interface Props {
 
 export const SliderCard: FC<Props> = ({ title, text, imgUrl }) => {
   return (
-    <div className='bg-gray-50 w-screen grid sm:grid-cols-5 gap-3'>
+    <div className='bg-gray-50 w-screen grid sm:grid-cols-5 gap-3 pb-3'>
       <div className='sm:col-span-3 flex items-center  '>
         <div className=''>
           <p className='text-center text-4xl pt-6 sm:pt-0 font-semibold'>

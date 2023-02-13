@@ -1,16 +1,21 @@
 import { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper';
 import { SliderCard } from './SliderCard';
 
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const Slider: FC = () => {
   return (
     <Swiper
+      modules={[Pagination, Navigation]}
       spaceBetween={50}
       slidesPerView={1}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      pagination
     >
       <SwiperSlide>
         <SliderCard
