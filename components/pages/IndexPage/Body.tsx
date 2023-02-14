@@ -5,6 +5,7 @@ export const Body: FC = () => {
     <div className=''>
       <div className='flex justify-center'>
         <img
+          data-aos='zoom-in-down'
           className='my-10 max-h-96'
           src='https://res.cloudinary.com/logicielapplab/image/upload/v1676242129/LogicielApplab/Application_development_1_g1vpwd.svg'
           alt=''

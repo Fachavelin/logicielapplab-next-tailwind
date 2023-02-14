@@ -20,7 +20,12 @@ export const SliderCard: FC<Props> = ({ title, text, imgUrl }) => {
         </div>
       </div>
       <div className='sm:col-span-2 sm:py-8 mx-4 sm:mx-0'>
-        <img src={`${imgUrl}`} alt='' className='bg-white rounded-lg ' />
+        <img
+          data-aos='flip-left'
+          src={`${imgUrl}`}
+          alt=''
+          className='bg-white rounded-lg '
+        />
       </div>
     </div>
   );

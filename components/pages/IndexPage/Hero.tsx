@@ -20,7 +20,10 @@ export const Hero: FC = () => {
             </p>
           </div>
         </div>
-        <div className='overflow-x-hidden overflow-y-hidden'>
+        <div
+          className='overflow-x-hidden overflow-y-hidden'
+          data-aos='zoom-in-down'
+        >
           <img
             className=''
             src='https://res.cloudinary.com/logicielapplab/image/upload/v1676307901/LogicielApplab/PHONE-min_o1jfhf.png'

@@ -11,6 +11,7 @@ export const Contact: FC = () => {
       </div>
       <div className='flex justify-center items-center'>
         <img
+          data-aos='zoom-in-up'
           src='https://res.cloudinary.com/logicielapplab/image/upload/v1676298548/LogicielApplab/Social_Communication_1_ka6uog.svg'
           alt=''
         />
