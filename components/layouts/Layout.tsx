@@ -8,7 +8,7 @@ type Props = {
 
 export const Layout: FC<Props> = ({ children }) => {
   return (
-    <div className='relative'>
+    <div className='relative overflow-x-hidden'>
       <Navbar />
       <main>{children}</main>
       <Whatsapp />

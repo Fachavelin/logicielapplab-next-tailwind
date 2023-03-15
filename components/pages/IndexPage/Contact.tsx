@@ -1,20 +1,20 @@
 import { FC } from 'react';
 import { ContactForm } from './ContactForm';
+import Lottie from 'lottie-react';
+import contactAnimation from '@/animations/contactanimation.json';
 
 export const Contact: FC = () => {
   return (
-    <div className='grid sm:grid-cols-2'>
-      <div className='row-start-2 sm:row-auto'>
-        <div className='p-8'>
-          <ContactForm />
+    <div className='bg-[#081229]'>
+      <div className='max-w-screen-xl mx-auto grid sm:grid-cols-2'>
+        <div className='row-auto'>
+          <div className='p-8'>
+            <ContactForm />
+          </div>
         </div>
-      </div>
-      <div className='flex justify-center items-center'>
-        <img
-          data-aos='zoom-in-up'
-          src='https://res.cloudinary.com/logicielapplab/image/upload/v1676298548/LogicielApplab/Social_Communication_1_ka6uog.svg'
-          alt=''
-        />
+        <div className='flex justify-center items-center'>
+          <Lottie animationData={contactAnimation} style={{ height: 350 }} />
+        </div>
       </div>
     </div>
   );
