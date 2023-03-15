@@ -4,7 +4,7 @@ import Animation from '@/animations/cellPhoneAnimation.json';
 
 export const Body: FC = () => {
   return (
-    <div className='text-white bg-[#081229]'>
+    <div className='text-white bg-[#081229]' id='nosotros'>
       <div className='max-w-5xl mx-auto'>
         <div className='grid md:grid-cols-5 py-6'>
           <div className='md:col-span-2'>

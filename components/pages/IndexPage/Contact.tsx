@@ -5,7 +5,7 @@ import contactAnimation from '@/animations/contactanimation.json';
 
 export const Contact: FC = () => {
   return (
-    <div className='bg-[#081229]'>
+    <div className='bg-[#081229]' id='contacto'>
       <div className='max-w-screen-xl mx-auto grid sm:grid-cols-2'>
         <div className='row-auto'>
           <div className='p-8'>

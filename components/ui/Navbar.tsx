@@ -3,6 +3,8 @@ import { Menu, Close } from '@mui/icons-material';
 export const Navbar: FC = () => {
   const [open, setOpen] = useState(false);
 
+  const click = useRef(null);
+
   return (
     <div className='w-full absolute top-0 z-50'>
       <div className='max-w-7xl mx-auto '>
@@ -11,19 +13,39 @@ export const Navbar: FC = () => {
             <img src='/images/logo.png' alt='' className='h-10' />
             <p className='text-white font-bold text-lg'>Logiciel Applab</p>
           </div>
-          <div className='hidden md:grid md:gap-7 md:grid-flow-col'>
-            <button className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'>
-              Quienes somos
-            </button>
-            <button className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'>
-              Nuestros servicios
-            </button>
-            <button className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'>
-              Trabajos recientes
-            </button>
-            <button className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'>
-              Contacto
-            </button>
+          <div className='hidden md:grid md:gap-7 md:grid-flow-col justify-items-center'>
+            <div className='flex items-center'>
+              <a
+                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                href='#nosotros'
+              >
+                Quienes somos
+              </a>
+            </div>
+            <div className='flex items-center'>
+              <a
+                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                href='#servicios'
+              >
+                Nuestros servicios
+              </a>
+            </div>
+            <div className='flex items-center'>
+              <a
+                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                href='#recientes'
+              >
+                Trabajos recientes
+              </a>
+            </div>
+            <div className='flex items-center'>
+              <a
+                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                href='#contacto'
+              >
+                Contacto
+              </a>
+            </div>
           </div>
           <button
             className='text-white hover:text-[#ed184f] md:hidden mr-10'

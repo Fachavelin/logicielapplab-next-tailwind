@@ -4,7 +4,7 @@ import { RecentWorkCard } from './RecentWorkCard';
 
 export const RecentWork: FC = () => {
   return (
-    <div className='bg-[#081229]'>
+    <div className='bg-[#081229]' id='recientes'>
       <div className='max-w-screen-xl mx-auto'>
         <h1 className='text-center text-white text-4xl pt-10'>
           Nuestros <span className='text-[#ed184f]'>Trabajos recientes</span>
