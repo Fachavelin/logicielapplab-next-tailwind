@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang='en'>
       <Head>
         <link rel='icon' href='/images/logo.png' type='image/x-icon' />
-        <title>Logiciel Applab</title>
       </Head>
       <body>
         <Main />

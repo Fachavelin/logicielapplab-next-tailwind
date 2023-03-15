@@ -19,6 +19,7 @@ export const Footer: FC = () => {
               href='https://web.facebook.com/profile.php?id=100031324907198'
               target='_blank'
               className='text-[#4267B2] hover:cursor-pointer hover:scale-105 transition delay-100'
+              rel='noreferrer'
             >
               <Facebook fontSize='large' />
             </a>
@@ -26,6 +27,7 @@ export const Footer: FC = () => {
               href='https://www.instagram.com/logicielapplab/'
               target='_blank'
               className='text-[#C13584] hover:cursor-pointer hover:scale-105 transition delay-100'
+              rel='noreferrer'
             >
               <Instagram fontSize='large' />
             </a>
