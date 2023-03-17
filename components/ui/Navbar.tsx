@@ -1,12 +1,30 @@
-import { FC, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import { Menu, Close } from '@mui/icons-material';
 export const Navbar: FC = () => {
   const [open, setOpen] = useState(false);
 
-  const click = useRef(null);
+  const [colorChange, setColorchange] = useState(false);
+
+  /* useEffect(() => {
+    window.addEventListener('scroll', changeNavbarColor);
+  }, []);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 180) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  }; */
+
+  /* ${!colorChange ? '' : ' bg-black footer-background'} */
 
   return (
-    <div className='w-full absolute top-0 z-50'>
+    <div
+      className={`w-full absolute top-0 z-50 
+    transition delay-1000
+    `}
+    >
       <div className='max-w-7xl mx-auto '>
         <div className='flex justify-between w-full'>
           <div className='flex items-center gap-3  py-4 '>

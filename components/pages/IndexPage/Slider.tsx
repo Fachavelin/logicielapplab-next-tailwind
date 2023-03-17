@@ -14,15 +14,14 @@ import 'swiper/css/pagination';
 export const Slider: FC = () => {
   return (
     <div className='bg-[#081229]' id='servicios'>
-      <div className='max-w-screen-2xl mx-auto py-10 px-3 services-background'>
+      <div className='max-w-screen-xl mx-auto py-10 px-3 services-background'>
         <h1 className='text-center text-4xl text-white'>Nuestros servicios</h1>
         <Swiper
           modules={[Pagination, Navigation]}
           spaceBetween={50}
           slidesPerView={1}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-          pagination
+          pagination={{ clickable: true }}
+          navigation={true}
         >
           <SwiperSlide>
             <SliderCard

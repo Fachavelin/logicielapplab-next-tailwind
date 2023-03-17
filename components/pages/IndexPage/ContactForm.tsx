@@ -1,13 +1,15 @@
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import Swal from 'sweetalert2';
 
 import * as Yup from 'yup';
+import { api } from '@/api';
+import { Workspaces } from '@mui/icons-material';
 
 const validationSchema = Yup.object().shape({
   name: Yup.string().required('El nombre es requerido'),
   email: Yup.string()
-    .email('Invalid email')
+    .email('Debe ser un correo válido')
     .required('El correo electrónico es requerido'),
   phone: Yup.string().required('El número de teléfono es requerido'),
   message: Yup.string().required('El mensaje es requerido'),
@@ -18,6 +20,7 @@ interface formValues {
   email: string;
   phone: string;
   message: string;
+  clientName: string;
 }
 
 const initialValues: formValues = {
@@ -25,22 +28,36 @@ const initialValues: formValues = {
   email: '',
   phone: '',
   message: '',
+  clientName: 'Logiciel Applab',
 };
 
 export const ContactForm: FC = () => {
+  const [loading, setLoading] = useState(false);
+
+  const postEmailRequest = async (formValues: formValues) => {
+    const { data } = await api.post(`standardMail`, formValues);
+
+    if (data.success) {
+      Swal.fire({
+        icon: 'success',
+        title: 'Gracias por contactarnos',
+        text: `${data.success}`,
+        timer: 2500,
+        // showConfirmButton: false,
+      });
+    }
+  };
+
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(form) => {
-        console.log(form);
-        Swal.fire({
-          icon: 'success',
-          title: 'Gracias por contactarnos',
-          text: 'Un administrador se pondra en contacto contigo pronto',
-          timer: 2500,
-          showConfirmButton: false,
-        });
+      onSubmit={async (form) => {
+        setLoading(true);
+
+        await postEmailRequest(form);
+
+        setLoading(false);
       }}
     >
       {({ touched, errors }) => (
@@ -126,8 +143,25 @@ export const ContactForm: FC = () => {
               <button
                 type='submit'
                 className='py-2 mx-4 px-2 bg-[#ed184f] hover:bg-[#da1145] transition delay-100 cursor-pointer rounded text-white mt-4'
+                disabled={loading}
               >
-                Enviar
+                {!loading ? (
+                  'Enviar'
+                ) : (
+                  <Workspaces
+                    sx={{
+                      animation: 'spin 1s linear infinite',
+                      '@keyframes spin': {
+                        from: {
+                          transform: 'rotate(360deg)',
+                        },
+                        to: {
+                          transform: 'rotate(0deg)',
+                        },
+                      },
+                    }}
+                  />
+                )}
               </button>
             </div>
           </div>

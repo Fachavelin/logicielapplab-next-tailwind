@@ -61,3 +61,15 @@ body {
     opacity: 1;
   }
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #ed184f !important;
+}
+
+.swiper-button-next {
+  color: #ed184f !important;
+}
+
+.swiper-button-prev {
+  color: #ed184f !important;
+}
