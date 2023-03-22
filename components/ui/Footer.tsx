@@ -35,7 +35,7 @@ export const Footer: FC = () => {
         </div>
         <div className=''>
           <div className='flex justify-center'>
-            <img src='/images/logo.png' alt='' className='h-20 animate-pulse' />
+            <img src='/images/logo.png' alt='' className='h-20' />
           </div>
           <p className='text-white font-bold text-center'>LOGICIEL APPLAB</p>
         </div>

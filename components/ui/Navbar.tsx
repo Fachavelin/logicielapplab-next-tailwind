@@ -25,7 +25,7 @@ export const Navbar: FC = () => {
     transition delay-1000
     `}
     >
-      <div className='max-w-7xl mx-auto '>
+      <div className='max-w-7xl mx-auto px-6'>
         <div className='flex justify-between w-full'>
           <div className='flex items-center gap-3  py-4 '>
             <img src='/images/logo.png' alt='' className='h-10' />
@@ -66,7 +66,7 @@ export const Navbar: FC = () => {
             </div>
           </div>
           <button
-            className='text-white hover:text-[#ed184f] md:hidden mr-10'
+            className='text-white hover:text-[#ed184f] md:hidden mr-4'
             onClick={() => setOpen(!open)}
           >
             {open ? <Close /> : <Menu />}

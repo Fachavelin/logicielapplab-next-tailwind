@@ -13,7 +13,7 @@ export const Body: FC = () => {
           <div className='md:col-start-3 md:col-span-3 mx-8'>
             <p className='text-4xl font-semibold text-center md:text-left'>
               ¿Por qué
-              <span className='text-[#ed184f]'>Logiciel Applab</span>?
+              <span className='text-[#ed184f]'>{' Logiciel Applab'}</span>?
             </p>
             <p className='text-lg py-8 text-justify'>
               Somos una empresa especializada en el desarrollo de aplicaciones

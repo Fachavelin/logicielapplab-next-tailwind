@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 import { SliderCard } from './SliderCard';
 
 import webanimation from '@/animations/webanimation.json';
@@ -17,11 +17,15 @@ export const Slider: FC = () => {
       <div className='max-w-screen-xl mx-auto py-10 px-3 services-background'>
         <h1 className='text-center text-4xl text-white'>Nuestros servicios</h1>
         <Swiper
-          modules={[Pagination, Navigation]}
+          modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={50}
           slidesPerView={1}
           pagination={{ clickable: true }}
           navigation={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
         >
           <SwiperSlide>
             <SliderCard
