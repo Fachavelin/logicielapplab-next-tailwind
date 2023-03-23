@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 export const Hero: FC = () => {
   return (
     <div
-      className='min-h-screen px-2 bg-cover sm:bg-fixed bg-bottom sm:bg-center relative'
+      className='min-h-screen px-4 bg-cover sm:bg-fixed bg-bottom sm:bg-center relative'
       style={{
         backgroundImage: `url("https://res.cloudinary.com/logicielapplab/image/upload/v1676175603/LogicielApplab/software-developer-6521720_1920_psc1wb.jpg")`,
       }}

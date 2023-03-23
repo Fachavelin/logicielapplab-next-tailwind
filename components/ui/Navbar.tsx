@@ -34,7 +34,7 @@ export const Navbar: FC = () => {
           <div className='hidden md:grid md:gap-7 md:grid-flow-col justify-items-center'>
             <div className='flex items-center'>
               <a
-                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                className='text-white text-sm transition font-semibold hover:text-[#ed184f] cursor-pointer'
                 href='#nosotros'
               >
                 Quienes somos
@@ -42,7 +42,7 @@ export const Navbar: FC = () => {
             </div>
             <div className='flex items-center'>
               <a
-                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                className='text-white text-sm transition font-semibold hover:text-[#ed184f] cursor-pointer'
                 href='#servicios'
               >
                 Nuestros servicios
@@ -50,7 +50,7 @@ export const Navbar: FC = () => {
             </div>
             <div className='flex items-center'>
               <a
-                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                className='text-white text-sm transition font-semibold hover:text-[#ed184f] cursor-pointer'
                 href='#recientes'
               >
                 Trabajos recientes
@@ -58,7 +58,7 @@ export const Navbar: FC = () => {
             </div>
             <div className='flex items-center'>
               <a
-                className='text-white text-sm font-semibold hover:text-[#ed184f] cursor-pointer'
+                className='text-white text-sm transition font-semibold hover:text-[#ed184f] cursor-pointer'
                 href='#contacto'
               >
                 Contacto
@@ -78,16 +78,16 @@ export const Navbar: FC = () => {
             !open ? 'scale-0' : 'scale-100'
           }`}
         >
-          <button className=' text-sm hover:text-[#ed184f] border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer rounded-t-sm'>
+          <button className='text-sm hover:text-[#ed184f] transition border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer rounded-t-sm'>
             Quienes somos
           </button>
-          <button className=' text-sm hover:text-[#ed184f] border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer'>
+          <button className='text-sm hover:text-[#ed184f] transition border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer'>
             Nuestros servicios
           </button>
-          <button className=' text-sm hover:text-[#ed184f] border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer'>
+          <button className='text-sm hover:text-[#ed184f] transition border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer'>
             Trabajos recientes
           </button>
-          <button className=' text-sm hover:text-[#ed184f] border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer rounded-b-sm'>
+          <button className='text-sm hover:text-[#ed184f] transition border-b hover:border hover:border-b-2 px-2 py-2 cursor-pointer rounded-b-sm'>
             Contacto
           </button>
         </div>

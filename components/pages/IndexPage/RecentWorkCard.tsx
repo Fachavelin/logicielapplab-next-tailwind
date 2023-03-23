@@ -4,11 +4,22 @@ interface Props {
   title: string;
   description: string;
   imageUrl: string;
+  aosTime?: number;
 }
 
-export const RecentWorkCard: FC<Props> = ({ title, description, imageUrl }) => {
+export const RecentWorkCard: FC<Props> = ({
+  title,
+  description,
+  imageUrl,
+  aosTime = 100,
+}) => {
   return (
-    <div className='rounded grid grid-cols-2 recent-work-card cursor-pointer hover:scale-105 hover:rotate-1 transition delay-100 text-white py-4'>
+    <div
+      className='rounded grid grid-cols-2 recent-work-card cursor-pointer hover:scale-105 hover:rotate-1 transition delay-100 text-white py-4'
+      data-aos='fade-down'
+      data-aos-easing='ease-out'
+      data-aos-duration={aosTime}
+    >
       <div className='flex justify-center'>
         <p className='pt-8 font-medium'>{title}</p>
       </div>

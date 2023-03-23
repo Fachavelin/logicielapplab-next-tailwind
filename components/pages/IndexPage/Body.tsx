@@ -11,11 +11,14 @@ export const Body: FC = () => {
             <Lottie animationData={Animation} />
           </div>
           <div className='md:col-start-3 md:col-span-3 mx-8'>
-            <p className='text-4xl font-semibold text-center md:text-left'>
+            <p
+              className='text-4xl font-semibold text-center md:text-left'
+              data-aos='fade-left'
+            >
               ¿Por qué
               <span className='text-[#ed184f]'>{' Logiciel Applab'}</span>?
             </p>
-            <p className='text-lg py-8 text-justify'>
+            <p className='text-lg py-8 text-justify' data-aos='fade-right'>
               Somos una empresa especializada en el desarrollo de aplicaciones
               móviles, sitios web y sistemas de software hechos según tus
               necesidades. Con nuestro equipo altamente calificado te

@@ -15,7 +15,9 @@ export const Slider: FC = () => {
   return (
     <div className='bg-[#081229]' id='servicios'>
       <div className='max-w-screen-xl mx-auto py-10 px-3 services-background'>
-        <h1 className='text-center text-4xl text-white'>Nuestros servicios</h1>
+        <h1 className='text-center text-4xl text-white' data-aos='zoom-in'>
+          Nuestros servicios
+        </h1>
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={50}
